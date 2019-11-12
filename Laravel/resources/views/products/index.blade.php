@@ -52,7 +52,7 @@
 
 <div class="row">
 @foreach($products as $product)
-<div class="col-4" style="margin: 20px;">
+<div class="col-4" >
 <div class="card" style="width: 18rem; margin-bottom: 100px;">
   <a href="{{ route('products.show',$product->id) }}"> <img src="{{$product->img}}" class="card-img-top" alt="..." style="height: 300px; width: 100%;"></a>
   <div class="card-body">
