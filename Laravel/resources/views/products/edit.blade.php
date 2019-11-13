@@ -4,10 +4,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left my-4">
-                <h2>Edit Product</h2>
+                <h2>Rezept bearbeiten</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary mb-4" href="{{ route('products.index') }}"> Back</a>
+                <a class="btn btn-primary mb-4" href="{{ route('products.index') }}"> Zurück</a>
             </div>
         </div>
     </div>
@@ -36,11 +36,35 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $product->detail }}</textarea>
+                    <strong>Kurzbeschreibung:</strong>
+                    <textarea class="form-control" style="height:150px" name="kurzbeschreibung" placeholder="Kurzbeschreibung">{{ $product->kurzbeschreibung }}</textarea>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+
+           <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Dauer:</strong>
+                    <textarea class="form-control" style="height:150px" name="dauer" placeholder="Daueren">{{ $product->dauer }}</textarea>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Zutaten:</strong>
+                    <textarea class="form-control" style="height:150px" name="zutaten" placeholder="Zutaten">{{ $product->zutaten }}</textarea>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Zubereitung:</strong>
+                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Zubereitung">{{ $product->detail }}</textarea>
+                </div>
+            </div>
+
+ 
+
+            <div class="col-xs-12 col-sm-12 col-md-12 text-center" style="margin-bottom:50px">
               <button type="submit" class="btn btn-primary">Speichern</button>
             </div>
         </div>
